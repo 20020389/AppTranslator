@@ -1,0 +1,47 @@
+@font-face {
+    font-family: "JetBrains Mono";
+    src: url("/assets/font/JetBrainsMono-Regular.ttf");
+}
+
+
+#showpass_bt{
+    -fx-background-image: url("/assets/eye_hide.png");
+    -fx-background-size: 18;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: transparent;
+}
+
+.check-box .box {
+    -fx-background-color: #4c566a;
+    -fx-border-radius:3px;
+}
+
+.check-box:selected .mark {
+    -fx-background-color: #88c0d0;
+}
+
+
+Label{
+    -fx-font-family: "JetBrains Mono";
+}
+
+Button {
+    -fx-font-family: "JetBrains Mono";
+    -fx-font-size: 17;
+}
+
+.Input_User , .Input_Pass{
+    -fx-border-width: 1;
+    -fx-border-radius: 4;
+    -fx-border-style: solid;
+    -fx-border-color: #4c566a;
+    -fx-background-radius: 4;
+    -fx-font-family: "JetBrains Mono";
+    -fx-font-size: 18;
+}
+
+.Input_User:focused , .Input_Pass:focused{
+    -fx-border-color: #88bebc;
+    -fx-highlight-fill: #434c5e;
+}

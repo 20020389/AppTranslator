@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="settingBase" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#paneClick" prefHeight="450.0" prefWidth="652.0" style="-fx-background-color: transparent;" stylesheets="@settingstyle.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.App.setting.SettingController">
+   <children>
+      <Label layoutX="23.0" layoutY="19.0" prefHeight="42.0" prefWidth="174.0" styleClass="labeltext" text="Background:" textFill="WHITE">
+         <font>
+            <Font name="JetBrains Mono Regular" size="15.0" />
+         </font>
+      </Label>
+      <Button id="save_button" fx:id="saveButton" disable="true" layoutX="40.0" layoutY="388.0" mnemonicParsing="false" onAction="#saveAllSetting" prefHeight="32.0" prefWidth="84.0" style="-fx-background-color: #2e3440;" styleClass="labeltext" text="save" textFill="WHITE">
+         <font>
+            <Font name="JetBrains Mono Regular" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="buttonBg" layoutX="211.0" layoutY="23.0" mnemonicParsing="false" onAction="#listClick" prefHeight="35.0" prefWidth="174.0" style="-fx-background-color: #2e3440;" text="Button" textFill="WHITE">
+         <font>
+            <Font name="JetBrains Mono Regular" size="15.0" />
+         </font></Button>
+      <Label fx:id="setOpacity" layoutX="23.0" layoutY="77.0" prefHeight="42.0" prefWidth="174.0" styleClass="labeltext" text="Opacity:" textFill="WHITE">
+         <font>
+            <Font name="JetBrains Mono Regular" size="15.0" />
+         </font>
+      </Label>
+      <Pane fx:id="sliderTrack" layoutX="211.0" layoutY="94.0" prefHeight="6.0" prefWidth="174.0" styleClass="slider_track" />
+      <Slider fx:id="sliderOpacity" layoutX="211.0" layoutY="90.0" max="100" min="0" prefHeight="15.0" prefWidth="174.0" styleClass="slider_bar" value="20" />
+      <Label id="restart_text" fx:id="restartLog" layoutX="40.0" layoutY="340.0" prefHeight="35.0" prefWidth="276.0" styleClass="labeltext" text="restart to apply setting" textFill="WHITE" visible="false">
+         <font>
+            <Font name="JetBrains Mono Regular" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="135.0" prefHeight="42.0" prefWidth="174.0" styleClass="labeltext" text="Voice:" textFill="WHITE">
+         <font>
+            <Font name="JetBrains Mono Regular" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="193.0" prefHeight="42.0" prefWidth="132.0" styleClass="labeltext" text="Mute voice:" textFill="WHITE">
+         <font>
+            <Font name="JetBrains Mono Regular" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="20.0" layoutY="217.0" prefHeight="42.0" prefWidth="164.0" styleClass="labelrecoment" text="(tăng hiệu suất dịch)" textFill="WHITE">
+         <font>
+            <Font name="JetBrains Mono Regular" size="10.0" />
+         </font>
+      </Label>
+      <Button fx:id="buttonVoice" layoutX="211.0" layoutY="135.0" mnemonicParsing="false" onAction="#voicebtClick" prefHeight="35.0" prefWidth="174.0" style="-fx-background-color: #2e3440;" text="Button" textFill="WHITE">
+         <font>
+            <Font name="JetBrains Mono Regular" size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="22.0" layoutY="266.0" prefHeight="42.0" prefWidth="132.0" styleClass="labeltext" text="Auto correct:" textFill="WHITE">
+         <font>
+            <Font name="JetBrains Mono Regular" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="19.0" layoutY="290.0" prefHeight="42.0" prefWidth="185.0" styleClass="labelrecoment" text="(tắt để tăng hiệu suất dịch)" textFill="WHITE">
+         <font>
+            <Font name="JetBrains Mono Regular" size="10.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="autoCorrect" layoutX="210.0" layoutY="281.0" mnemonicParsing="false" onAction="#autoCorrectClick" prefHeight="22.0" prefWidth="20.0" styleClass="check-box" />
+      <CheckBox fx:id="muteVoice" layoutX="211.0" layoutY="208.0" mnemonicParsing="false" onAction="#muteVoiceClick" prefHeight="22.0" prefWidth="20.0" styleClass="check-box" />
+      <ListView fx:id="comboBg" layoutX="211.0" layoutY="58.0" prefHeight="200.0" prefWidth="174.0" styleClass="list_bg" visible="false" />
+      <ListView fx:id="comboVoice" layoutX="211.0" layoutY="170.0" prefHeight="200.0" prefWidth="174.0" styleClass="list_bg" visible="false" />
+      <Button layoutX="407.0" layoutY="26.0" mnemonicParsing="false" onAction="#addBgClick" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: transparent; -fx-background-radius: 3;" styleClass="addBGBt" />
+   </children>
+   <padding>
+      <Insets left="100.0" />
+   </padding>
+</AnchorPane>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #2e3440;" stylesheets="@LoginStyle.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoginApp.LoginController">
+   <children>
+      <!---->
+      <!--____________________________START INPUT____________________________-->
+      <!---->
+      <!--userbox-->
+      <TextField fx:id="userField" layoutX="135.0" layoutY="59.0" prefHeight="59.0" prefWidth="357.0" style="-fx-background-color: #2e3440;-fx-text-fill: white; -fx-padding: 0 30 0 30;" styleClass="Input_User" AnchorPane.topAnchor="59.0">
+      </TextField>
+      <Label fx:id="userLabel" disable="true" layoutX="155.0" layoutY="74.0" prefHeight="21.0" prefWidth="79.0" style="-fx-text-fill: white;" text="user" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </Label>
+      <!--password-->
+      <TextField fx:id="passField" layoutX="135.0" layoutY="145.0" prefHeight="59.0" prefWidth="357.0" style="-fx-background-color: #2e3440; -fx-text-fill: white; -fx-padding: 0 30 0 30;" styleClass="Input_Pass" visible="false" AnchorPane.topAnchor="145.0">
+      </TextField>
+      <PasswordField fx:id="passBox" layoutX="135.0" layoutY="145.0" prefHeight="59.0" prefWidth="357.0" style="-fx-background-color: #2e3440; -fx-text-fill: white; -fx-padding: 0 30 0 30;" styleClass="Input_Pass">
+      </PasswordField>
+      <Label fx:id="passLabel" disable="true" layoutX="155.0" layoutY="160.0" prefHeight="21.0" prefWidth="107.0" style="-fx-text-fill: white;" text="password" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <padding>
+            <Insets left="10.0" right="10.0" />
+         </padding>
+      </Label>
+      <!--databasebox-->
+      <TextField fx:id="dataBoxField" layoutX="135.0" layoutY="231.0" prefHeight="59.0" prefWidth="357.0" style="-fx-background-color: #2e3440;-fx-text-fill: white; -fx-padding: 0 30 0 30;" styleClass="Input_User">
+      </TextField>
+      <Label fx:id="dataLabel" disable="true" layoutX="155.0" layoutY="246.0" prefHeight="21.0" prefWidth="113.0" style="-fx-text-fill: white;" text="dataname" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </Label>
+      <!---->
+      <!-- ____________________________END INPUT_______________________________ -->
+      <!---->
+      <Button fx:id="loginButton" layoutX="206.0" layoutY="440.0" mnemonicParsing="false" onAction="#loginClick" prefHeight="44.0" prefWidth="214.0" style="-fx-background-radius: 0; -fx-background-color: #4d576b; -fx-text-fill: white;" text="Login">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <CheckBox fx:id="rememberBox" layoutX="168.0" layoutY="328.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="133.0" style="-fx-text-fill: white;" text="Nhớ mật khẩu" />
+      <Button id="showpass_bt" fx:id="showPass" layoutX="444.0" layoutY="158.0" mnemonicParsing="false" onAction="#showPassClick" prefHeight="26.0" prefWidth="32.0" style="-fx-background-color: transparent;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Label fx:id="loginFailedLog" layoutX="106.0" layoutY="381.0" prefHeight="21.0" prefWidth="397.0" text="Tên đăng nhập, csdl hoặc mật khẩu không chính xác!" textFill="#ff0606" visible="false" />
+   </children>
+</AnchorPane>

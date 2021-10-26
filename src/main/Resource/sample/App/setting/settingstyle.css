@@ -1,0 +1,53 @@
+@font-face {
+    font-family: "JetBrains Mono";
+    src: url("/assets/font/JetBrainsMono-Regular.ttf");
+}
+
+
+.labeltext{
+    -fx-font-family: "JetBrains Mono";
+    -fx-font-size: 15px;
+}
+
+.labelrecoment{
+    -fx-font-family: "JetBrains Mono";
+    -fx-font-size: 10px;
+}
+
+#save_button{
+    -fx-font-size: 18px;
+}
+
+#restart_text{
+    -fx-font-size: 17px;
+}
+
+.slider_bar{
+    -fx-background-color: transparent;
+    -fx-pref-height: 10px;
+    -fx-background-radius: 5px;
+}
+
+.slider_bar .track{
+    -fx-pref-height: 2px;
+    -fx-background-color: transparent;
+}
+
+.slider_bar .thumb{
+    -fx-pref-height: 12px;
+    -fx-pref-width: 12px;
+}
+
+.slider_track{
+    -fx-pref-height: 4px;
+    -fx-background-radius: 5px;
+}
+
+.check-box .box {
+    -fx-background-color: #4c566a;
+    -fx-border-radius:3px;
+}
+
+.check-box:selected .mark {
+    -fx-background-color: #88c0d0;
+}

@@ -1,0 +1,85 @@
+
+@font-face {
+    font-family: "JetBrains Mono";
+    src: url("/assets/font/JetBrainsMono-Regular.ttf");
+}
+
+.textbox1{
+    -fx-border-width: 1;
+    -fx-border-radius: 4;
+    -fx-border-style: solid;
+    -fx-border-color: #4c566a;
+    -fx-background-radius: 4;
+    -fx-font-size: 18;
+    -fx-font-family: "JetBrains Mono";
+}
+
+.textbox1:focused{
+    -fx-border-color: #88bebc;
+    -fx-highlight-fill: #434c5e;
+}
+
+
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+
+/*
+-------------------------đưa ra gợi ý từ ----------------------------------------
+*/
+ListView .list-cell:odd, ListView .list-cell:even{
+    -fx-background-color: #3b4252;
+}
+
+ListView .list-cell:odd:hover, ListView .list-cell:even:hover{
+    -fx-background-color:  #353b49;
+}
+
+.vbox_item{
+    -fx-background-color: transparent;
+}
+
+.label_view{
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+}
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+
+/*
+* ---------------------xóa từ trong text box -----------------------------
+*/
+.clearbt{
+    -fx-background-color: transparent;
+    -fx-background-image: url("/assets/close.png");
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 10px;
+    -fx-background-radius: 30px;
+    -fx-cursor: hand;
+}
+
+.clearbt:hover{
+    -fx-background-color: rgba(0,0,0,0.1);
+}
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+
+
+.remove_button{
+    -fx-background-color: transparent;
+    -fx-background-image: url("/assets/trash.png");
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 20px;
+    -fx-background-radius: 4px;
+    -fx-cursor: hand;
+}
+
+.remove_button:hover{
+    -fx-background-color: #3d4559 !important;
+}
+
+.removeLogo{
+    -fx-background-color: transparent;
+    -fx-background-image: url("/assets/google_translate.png");
+    -fx-background-position: 50;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 238;
+}

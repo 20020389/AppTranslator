@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="mainPane" prefHeight="450.0" prefWidth="900.0" style="-fx-background-color: transparent;" stylesheets="@AddwordStyle.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.App.addword.AddwordController">
+    <children>
+        <Pane fx:id="baseTextbox" prefHeight="450.0" prefWidth="472.0">
+            <TextField fx:id="wordField" cache="true" layoutX="57.0" layoutY="26.0" prefHeight="59.0" prefWidth="358.0" style="-fx-background-color: #323846; -fx-text-fill: white; -fx-padding: 0 30 0 30;" />
+            <Label fx:id="wordLabel" disable="true" layoutX="79.0" layoutY="43.0" prefHeight="23.0" prefWidth="62.0" style="-fx-text-fill: white;" text="word" textFill="WHITE">
+                <font>
+                    <Font size="18.0" />
+                </font>
+                <padding>
+                    <Insets left="10.0" />
+                </padding>
+            </Label>
+            <TextField fx:id="typeField" cache="true" layoutX="57.0" layoutY="101.0" prefHeight="59.0" prefWidth="358.0" style="-fx-background-color: #323846; -fx-text-fill: white; -fx-padding: 0 30 0 30;" />
+            <Label fx:id="typeLabel" disable="true" layoutX="79.0" layoutY="118.0" prefHeight="23.0" prefWidth="62.0" style="-fx-text-fill: white;" text="type" textFill="WHITE">
+                <font>
+                    <Font size="18.0" />
+                </font>
+                <padding>
+                    <Insets left="10.0" />
+                </padding>
+            </Label>
+            <TextField fx:id="speakField" cache="true" layoutX="57.0" layoutY="176.0" prefHeight="59.0" prefWidth="358.0" style="-fx-background-color: #323846; -fx-text-fill: white; -fx-padding: 0 30 0 30;" />
+            <Label fx:id="speekLabel" disable="true" layoutX="79.0" layoutY="193.0" prefHeight="23.0" prefWidth="73.0" style="-fx-text-fill: white;" text="speek" textFill="WHITE">
+                <font>
+                    <Font size="18.0" />
+                </font>
+                <padding>
+                    <Insets left="10.0" />
+                </padding>
+            </Label>
+            <TextField fx:id="transField" cache="true" layoutX="57.0" layoutY="251.0" prefHeight="59.0" prefWidth="358.0" style="-fx-background-color: #323846; -fx-text-fill: white; -fx-padding: 0 30 0 30;" />
+            <Label fx:id="transLabel" disable="true" layoutX="79.0" layoutY="268.0" prefHeight="23.0" prefWidth="62.0" style="-fx-text-fill: white;" text="dịch" textFill="WHITE">
+                <font>
+                    <Font size="18.0" />
+                </font>
+                <padding>
+                    <Insets left="10.0" />
+                </padding>
+            </Label>
+            <TextField fx:id="sameField" layoutX="218.0" layoutY="326.0" prefHeight="59.0" prefWidth="197.0" style="-fx-background-color: #323846; -fx-text-fill: white; -fx-padding: 0 30 0 30;" />
+            <Label fx:id="sameLabel" disable="true" layoutX="240.0" layoutY="343.0" prefHeight="23.0" prefWidth="62.0" style="-fx-text-fill: white;" text="same" textFill="WHITE">
+                <font>
+                   <Font size="18.0" />
+                </font>
+                <padding>
+                   <Insets left="10.0" />
+                </padding>
+            </Label>
+            <Pane fx:id="addvancedPane" layoutX="206.0" layoutY="320.0" prefHeight="69.0" prefWidth="209.0" style="-fx-background-color: #323846; -fx-background-radius: 4;" />
+            <CheckBox fx:id="advancedCheck" layoutX="62.0" layoutY="345.0" mnemonicParsing="false" onAction="#checkAdvancedClick" prefHeight="26.0" prefWidth="138.0" styleClass="advancedBt" text="Advanced" />
+            <Button fx:id="submitBt" disable="true" layoutX="61.0" layoutY="399.0" mnemonicParsing="false" onAction="#submitClick" prefHeight="41.0" prefWidth="162.0" style="-fx-background-color: #3b4252;" styleClass="Submit" text="submit" />
+            <Button fx:id="clearBt" disable="true" layoutX="248.0" layoutY="399.0" mnemonicParsing="false" onAction="#clearClick" prefHeight="41.0" prefWidth="162.0" style="-fx-background-color: #3b4252;" styleClass="Clear" text="clear" />
+         <Button fx:id="notifyBt" layoutX="430.0" layoutY="41.0" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: transparent;" styleClass="notify" />
+         <CheckBox fx:id="muteBox1" layoutX="430.0" layoutY="118.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="19.0" styleClass="advancedBt" visible="false">
+            <tooltip>
+               <Tooltip text="don't use this" />
+            </tooltip>
+         </CheckBox>
+         <CheckBox fx:id="muteBox2" layoutX="430.0" layoutY="193.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="19.0" styleClass="advancedBt" visible="false">
+            <tooltip>
+               <Tooltip text="don't use this" />
+            </tooltip>
+         </CheckBox>
+         <CheckBox fx:id="muteBox3" layoutX="430.0" layoutY="270.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="19.0" styleClass="advancedBt" visible="false">
+            <tooltip>
+               <Tooltip text="don't use this" />
+            </tooltip>
+         </CheckBox>
+        </Pane>
+
+    </children>
+</AnchorPane>

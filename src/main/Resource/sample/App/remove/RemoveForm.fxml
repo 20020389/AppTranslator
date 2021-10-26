@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane fx:id="removePane" prefHeight="450.0" prefWidth="900.0" style="-fx-background-color: transparent;" styleClass="paneBG" stylesheets="@RemoveStyle.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.App.remove.RemoveController">
+   <children>
+      <Pane fx:id="baseTextbox" prefHeight="450.0" prefWidth="472.0">
+         <children>
+            <Pane fx:id="workPane" layoutX="58.0" layoutY="136.0" prefHeight="238.0" prefWidth="357.0" styleClass="removeLogo" />
+            <Pane layoutX="57.0" layoutY="27.0" prefHeight="55.0" prefWidth="292">
+               <ListView fx:id="listItems" layoutX="1.0" layoutY="55" prefHeight="0" prefWidth="292.0" style="-fx-background-color: #2e3440;" styleClass="list_view" visible="false" />
+               <Pane fx:id="textboxChoosing" disable="true" layoutX="1.0" layoutY="0" prefHeight="56" prefWidth="291.0" style="-fx-background-color: rgba(0,0,0,0.1)" />
+               <TextField fx:id="textbox1" prefHeight="56.0" prefWidth="295.0" style="-fx-background-color: #323846; -fx-text-fill: white; -fx-padding: 0 30 0 30;" styleClass="textbox1" AnchorPane.topAnchor="59.0">
+                  <padding>
+                     <Insets right="5.0" />
+                  </padding>
+               </TextField>
+               <Label fx:id="textbox1label" disable="true" layoutX="20.0" layoutY="17.0" prefHeight="21.0" prefWidth="59.0" style="-fx-text-fill: white;" text="dịch" textFill="WHITE">
+                  <font>
+                     <Font size="18.0" />
+                  </font>
+                  <padding>
+                     <Insets left="10.0" />
+                  </padding>
+               </Label>
+               <Button fx:id="clearBt" contentDisplay="CENTER" layoutX="260.0" layoutY="15.0" onAction="#clearBtClick" prefHeight="25.0" prefWidth="25.0" style="-fx-background-color: transparent;" styleClass="clearbt" visible="false" />
+            </Pane>
+            <Button fx:id="trashBt" layoutX="377.0" layoutY="36.0" mnemonicParsing="false" onAction="#removeWordClick" prefHeight="38.0" prefWidth="38.0" style="-fx-background-color: transparent;" styleClass="remove_button" />
+         </children>
+      </Pane>
+   </children>
+</Pane>

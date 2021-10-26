@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600" prefWidth="950.0" style="-fx-background-color: #323846;" styleClass="body_base" stylesheets="@style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.App.Controller">
+   <children>
+      <Pane fx:id="backGround" disable="true" prefHeight="600.0" prefWidth="950.0" styleClass="ImageView" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <StackPane fx:id="workPane" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <Pane fx:id="basePanel" layoutX="50.0" maxHeight="450.0" maxWidth="900.0" StackPane.alignment="CENTER">
+            <children>
+               <TextArea layoutX="117.0" layoutY="7.0" prefHeight="200.0" prefWidth="200.0" />
+            </children></Pane>
+      </StackPane>
+      <VBox prefHeight="600.0" prefWidth="50.0" style="-fx-background-color: #2e3440;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="homeTrans" mnemonicParsing="false" onAction="#homeClick" prefHeight="50" prefWidth="50" styleClass="menu_trans-home" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <tooltip>
+                  <Tooltip style="-fx-background-color: #323846;" text="Home">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Tooltip>
+               </tooltip>
+            </Button>
+            <Button fx:id="settingTrans" layoutY="50" mnemonicParsing="false" onAction="#settingClick" prefHeight="50" prefWidth="50" styleClass="menu_trans-setting" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <tooltip>
+                  <Tooltip style="-fx-background-color: #323846;" text="Setting">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Tooltip>
+               </tooltip>
+            </Button>
+            <Button fx:id="addTrans" layoutY="100" mnemonicParsing="false" onAction="#addClick" prefHeight="50" prefWidth="50" styleClass="menu_trans-add" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <tooltip>
+                  <Tooltip style="-fx-background-color: #323846;" text="Add Word">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Tooltip>
+               </tooltip>
+            </Button>
+            <Button fx:id="removeTrans" layoutY="150" mnemonicParsing="false" onAction="#removeClick" prefHeight="50" prefWidth="50" styleClass="menu_trans-remove" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <tooltip>
+                  <Tooltip style="-fx-background-color: #323846;" text="Remove Word">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Tooltip>
+               </tooltip>
+            </Button>
+            <AnchorPane fx:id="baseRefresh" prefHeight="400.0" prefWidth="50.0">
+               <children>
+                  <Button fx:id="refreshTrans" layoutY="200" mnemonicParsing="false" onAction="#refreshClick" prefHeight="50" prefWidth="50" styleClass="menu_trans-refresh" textFill="WHITE" AnchorPane.bottomAnchor="0.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <tooltip>
+                        <Tooltip style="-fx-background-color: #323846;" text="refresh database">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Tooltip>
+                     </tooltip>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

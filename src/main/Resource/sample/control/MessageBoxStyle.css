@@ -1,0 +1,96 @@
+
+@font-face {
+    font-family: "Noto-Sans";
+    src: url("/assets/font/NotoSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Noto-Sans-Bold";
+    src: url("/assets/font/NotoSans-Bold.ttf");
+}
+
+.pane{
+    -fx-background-image: url("/assets/messagebox.png");
+    -fx-background-size: 400;
+    -fx-background-color:  #2e3440;
+    -fx-background-position: 3 5;
+    -fx-background-repeat: no-repeat;
+    -fx-background-radius: 0;
+}
+
+Label{
+    -fx-font-family: "Noto-Sans";
+    -fx-font-size: 14;
+}
+
+.check_box {
+    -fx-font-family: "Noto-Sans";
+    -fx-text-fill: white;
+}
+
+.check_box > .box > .mark {
+    -fx-padding: 3;
+}
+
+.check_box .mark{
+    -fx-shape: "M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z";
+}
+
+.check_box .box{
+    -fx-background-color: #4c566a;
+    -fx-pref-width: 16;
+    -fx-pref-height: 16;
+    -fx-border-width: 2px;
+    -fx-border-style: solid;
+    -fx-border-color: transparent;
+    -fx-border-radius: 2;
+}
+
+.check_box:selected .mark {
+    -fx-background-color: #88c0d0;
+}
+
+.check_box:focused .box{
+    -fx-border-width: 2px;
+    -fx-border-style: solid;
+    -fx-border-color: #88c0d0;
+    -fx-border-radius: 2;
+}
+
+.okButton{
+    -fx-font-family: "Noto-Sans-Bold";
+    -fx-pref-width: 90;
+    -fx-pref-height: 10;
+    -fx-font-size: 14;
+    -fx-text-fill: #2e3445;
+    -fx-background-color: #88c0d0;
+    -fx-background-radius: 3;
+    -fx-border-width: 2;
+    -fx-border-style: none;
+    -fx-border-color: transparent;
+    -fx-border-radius: 3;
+}
+
+.okButton:focused{
+    -fx-border-style: solid;
+    -fx-border-color: white;
+}
+
+.cancelButton{
+    -fx-font-family: "Noto-Sans-Bold";
+    -fx-pref-width: 90;
+    -fx-pref-height: 10;
+    -fx-font-size: 14;
+    -fx-text-fill: white;
+    -fx-background-color: #4d576b;
+    -fx-background-radius: 3;
+    -fx-border-width: 2;
+    -fx-border-style: none;
+    -fx-border-color: transparent;
+    -fx-border-radius: 3;
+}
+
+.cancelButton:focused {
+    -fx-border-style: solid;
+    -fx-border-color: #88c0d0;
+}

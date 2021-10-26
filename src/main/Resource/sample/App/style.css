@@ -1,0 +1,272 @@
+@font-face {
+    font-family: "JetBrains Mono";
+    src: url("/assets/font/JetBrainsMono-Regular.ttf");
+}
+
+.body{
+    -fx-font-family: "JetBrains Mono";
+}
+
+/*------------------Nơi nhập từ dịch------*/
+/*.textbox1 {
+    -fx-text-fill: white;
+    -fx-padding: 0 20px 0 20px;
+    -fx-font-size: 16px;
+    -fx-prompt-text-fill: rgba(255,255,255,0.3);
+    -fx-highlight-fill: aqua;
+    -fx-highlight-text-fill: black;
+}*/
+
+.textbox1{
+    -fx-border-width: 1;
+    -fx-border-radius: 4;
+    -fx-border-style: solid;
+    -fx-border-color: #4c566a;
+    -fx-background-radius: 4;
+    -fx-font-family: "JetBrains Mono";
+    -fx-font-size: 18;
+    -fx-background-color: #323846;
+}
+
+.textbox1:focused{
+    -fx-border-color: #88bebc;
+    -fx-highlight-fill: #434c5e;
+}
+
+.voice_bt{
+    -fx-background-image: url("/assets/volume2.png");
+    -fx-background-position: center;
+    -fx-background-size: 20px;
+    -fx-background-repeat: no-repeat;
+}
+
+.voice_bt:hover{
+    -fx-background-color: #3d4559 !important;
+}
+
+
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+
+/*
+-------------------------đưa ra gợi ý từ ----------------------------------------
+*/
+ListView .list-cell:odd, ListView .list-cell:even{
+    -fx-background-color: #3b4252;
+}
+
+ListView .list-cell:odd:hover, ListView .list-cell:even:hover{
+    -fx-background-color:  #353b49;
+}
+
+.vbox_item{
+    -fx-background-color: transparent;
+}
+
+.label_view{
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+}
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+
+/*
+* ---------------------xóa từ trong text box -----------------------------
+*/
+.clear_bt{
+    -fx-background-color: transparent;
+    -fx-background-image: url("/assets/close.png");
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 10px;
+    -fx-background-radius: 30px;
+    -fx-cursor: hand;
+}
+
+.clear_bt:hover{
+    -fx-background-color: rgba(0,0,0,0.1);
+}
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+
+/*
+* -----------------------------hiển thị kết quả dịch ---------------------------
+*/
+.Translate{
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+}
+
+.Translate--1st{
+    -fx-text-fill: white;
+    -fx-font-size: 21px;
+}
+
+.Translate_Base{
+    -fx-background-radius: 10px;
+    -fx-background-color:  #2e3440;
+}
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+
+
+/*
+   -------------------------Form Dịch -------------------------------------
+*/
+
+.menu_trans-home{
+    -fx-background-color: transparent;
+    -fx-background-image: url("/assets/home-solid.png");
+    -fx-background-size: 25px;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-radius: 0;
+}
+
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+
+/*
+----------------------------------Form Cài Đặt ---------------------------------
+*/
+
+.menu_trans-setting{
+    -fx-background-color: transparent;
+    -fx-background-image: url("/assets/setting.png");
+    -fx-background-size: 25px;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-radius: 0;
+}
+
+.menu_trans-home:hover,
+.menu_trans-setting:hover,
+.menu_trans-add:hover,
+.menu_trans-remove:hover{
+    -fx-background-color: #3d4559 !important;
+}
+
+.menu_trans-remove{
+    -fx-background-color: transparent;
+    -fx-background-image: url("/assets/remove.png");
+    -fx-background-size: 25px;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-radius: 0;
+}
+
+.menu_trans-refresh{
+    -fx-background-color: transparent;
+    -fx-background-image: url("/assets/refresh.png");
+    -fx-background-size: 20px;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-radius: 0;
+}
+
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+
+/*-----------------------------------Menu Add-------------------------------------*/
+
+.menu_trans-add{
+    -fx-background-color: transparent;
+    -fx-background-image: url("/assets/add_button.png");
+    -fx-background-size: 25px;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-radius: 0;
+}
+
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+
+.button_label, .button_label{
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 0);
+}
+
+.ImageView{
+    -fx-background-size: cover;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+}
+
+
+/*------------------------------------------background choose----------------------------------*/
+
+.list_bg {
+    -fx-background-color: #2e3440;
+    -fx-background-radius: 0;
+    -fx-text-fill: white;
+}
+
+.list_bg .scroll-bar:horizontal .track,
+.list_bg .scroll-bar:vertical .track{
+    -fx-background-color: #2e3440;
+    -fx-border-color: #2e3440;
+    -fx-background-radius: 0em;
+    -fx-border-radius:2em;
+}
+
+/* The increment and decrement button CSS class of scrollbar */
+.list_bg .scroll-bar:horizontal .increment-button ,
+.list_bg .scroll-bar:horizontal .decrement-button {
+    -fx-background-color:transparent;
+    -fx-background-radius: 0em;
+    -fx-padding:0 0 10 0;
+
+}
+
+/* The increment and decrement button CSS class of scrollbar */
+
+.list_bg .scroll-bar:vertical .increment-button ,
+.list_bg .scroll-bar:vertical .decrement-button {
+
+    -fx-background-color:transparent;
+    -fx-background-radius: 0em;
+    -fx-padding:0 10 0 0;
+
+}
+
+.list_bg .scroll-bar .increment-arrow,
+.list_bg  .scroll-bar .decrement-arrow
+{
+    -fx-shape: " ";
+    -fx-padding:0;
+}
+
+/* The main scrollbar **thumb** CSS class which we drag every time (movable) */
+.list_bg .scroll-bar:horizontal .thumb,
+.list_bg .scroll-bar:vertical .thumb {
+    -fx-background-color:derive(black,90%);
+    -fx-background-insets: 2, 0, 0;
+    -fx-background-radius: 2em;
+
+}
+
+.combo_bg_label{
+    -fx-text-fill: white;
+}
+
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+
+/*style for clipboard button*/
+.copyButton{
+    -fx-background-image: url("/assets/clipboard-regular.png");
+    -fx-background-position: center;
+    -fx-background-size: 15px;
+    -fx-background-repeat: no-repeat;
+}
+
+.copyButton:hover{
+    -fx-background-color: #3d4559 !important;
+}
+
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+
+/*style for add bacground button*/
+.addBGBt{
+    -fx-background-image: url("/assets/add_bg.png");
+    -fx-background-position: center;
+    -fx-background-size: 15px;
+    -fx-background-repeat: no-repeat;
+}
+
+.addBGBt:hover{
+    -fx-background-color: #3d4559 !important;
+}
+
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/

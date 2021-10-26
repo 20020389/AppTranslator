@@ -1,0 +1,63 @@
+TextField{
+    -fx-border-width: 1;
+    -fx-border-radius: 4;
+    -fx-border-style: solid;
+    -fx-border-color: #4c566a;
+    -fx-background-radius: 4;
+    -fx-font-family: "JetBrains Mono";
+    -fx-font-size: 18;
+}
+
+TextField:focused{
+    -fx-border-color: #88bebc;
+    -fx-highlight-fill: #434c5e;
+}
+
+Label, Button{
+    -fx-font-family: "JetBrains Mono";
+}
+
+Button{
+    -fx-text-fill: white;
+    -fx-border-radius: 4;
+}
+
+Button:focused{
+    -fx-border-width: 1;
+    -fx-border-style: solid;
+    -fx-border-color: #88bebc;
+}
+
+.Img_BG{
+    -fx-background-image: url("/assets/addword-nord.png");
+    -fx-background-size: 330px;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: transparent;
+    -fx-background-radius: 5;
+}
+
+.Clear:focused{
+    -fx-border-color: red;
+}
+
+.advancedBt{
+    -fx-font-family: "JetBrains Mono";
+    -fx-font-size: 15;
+    -fx-text-fill: white;
+}
+
+.advancedBt .box {
+    -fx-background-color: #4c566a;
+    -fx-border-radius:3px;
+}
+
+.advancedBt:selected .mark {
+    -fx-background-color: #88c0d0;
+}
+
+.notify{
+    -fx-background-size: 26;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+}
