@@ -1,0 +1,30 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="App3:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/App3_jar</output-path>
+    <root id="archive" name="App3.jar">
+      <element id="module-output" name="App3" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/lib_tts/en_us.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/lib_tts/cmulex.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/lib_tts/mbrola.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/lib_tts/freetts.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/lib_tts/cmudict04.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/lib_tts/cmu_us_kal.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/lib_tts/cmutimelex.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/lib_tts/cmu_time_awb.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/lib_tts/freetts-jsapi10.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/lib_jx/javafx-swt.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/lib_jx/javafx.web.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/lib_jx/javafx.base.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/lib_jx/javafx.fxml.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/lib_jx/javafx.media.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/lib_jx/javafx.swing.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/lib_jx/javafx.controls.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/lib_jx/javafx.graphics.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/lib_jx/jxbrowser-linux64-7.19.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/libjson/json-simple-1.1.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/database_lib/mariadb-java-client-2.7.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/database_lib/mariadb-java-client-2.7.3-javadoc.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/database_lib/mariadb-java-client-2.7.3-sources.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

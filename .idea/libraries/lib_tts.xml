@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="lib_tts">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/libs/lib_tts" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/libs/lib_tts" recursive="false" />
+  </library>
+</component>
